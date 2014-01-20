@@ -39,12 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnswerBase.cs" />
     <Compile Include="CandidateAnswerForQuestion.cs" />
     <Compile Include="IAnswer.cs" />
     <Compile Include="IAnswersContainter.cs" />
     <Compile Include="IQuestion.cs" />
     <Compile Include="OpenQuestion.cs" />
+    <Compile Include="OpenQuestionAnswer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QcmAnswer.cs" />
     <Compile Include="QcmQuestion.cs" />
     <Compile Include="QuestionBase.cs" />
     <Compile Include="Quiz.cs" />

@@ -2,6 +2,9 @@
 
 namespace Bean.Q.Wemanity
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public interface IAnswersContainter
     {
         bool ContainsKey(int questionId);

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="755b74b4-23da-4056-88c8-dbbc026db291" solutionId="755b74b4-23da-4056-88c8-dbbc026db291" resetWebServer="false" sharePointProductVersion="15.0" name="Site.Q.Wemanity" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="a459f332-d511-4579-b1e0-297daf216a30" />
+  </features>
+</package>

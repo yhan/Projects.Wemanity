@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35A3DADC-F8CF-45CA-80D8-AB969F4767A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test.WorkflowManager.Q.Wemanity</RootNamespace>
+    <AssemblyName>Test.WorkflowManager.Q.Wemanity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\externalReferences\NUnit-2.6.3\bin\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\externalReferences\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompareIntArrayTest.cs" />
+    <Compile Include="FakeQuestion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QcmProvider.cs" />
+    <Compile Include="QuizCheckerTest.cs" />
+    <Compile Include="QuizExecutionTest.cs" />
+    <Compile Include="QuizNavigatorTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bean.Quiz.Wemanity\Bean.Q.Wemanity.csproj">
+      <Project>{871c706c-d343-4501-9b65-afa072953b12}</Project>
+      <Name>Bean.Q.Wemanity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess.Q.Wemanity\DataAccess.Q.Wemanity.csproj">
+      <Project>{14268745-780A-4EB9-9B50-BCC6ADAD734F}</Project>
+      <Name>DataAccess.Q.Wemanity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Navigation.Q.Wemanity\Navigation.Q.Wemanity.csproj">
+      <Project>{0341EE13-BC02-4568-A80B-605849929175}</Project>
+      <Name>Navigation.Q.Wemanity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkflowManager.Q.Wemanity\WorkflowManager.Q.Wemanity.csproj">
+      <Project>{d657ba1a-f9cc-45dd-9728-1fbf2687b02d}</Project>
+      <Name>WorkflowManager.Q.Wemanity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

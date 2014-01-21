@@ -15,6 +15,12 @@ namespace WorkflowManager.Q.Wemanity
                 res =  target.Contains(ele);
                 if (!res) return false;
             }
+
+            foreach (var ele in target)
+            {
+                res = other.Contains(ele);
+                if (!res) return false;
+            }
             return res;
         }
     }
